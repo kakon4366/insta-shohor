@@ -103,6 +103,22 @@
 						মেশিন code এ রুপান্তর করে। তারপর ব্রাউজারের মাধ্যমে output দেখায়।
 					</p>
 				</div>
+				<div class="question">
+					<h3 class="fst-italic bg-light d-inline">
+						2. What does Javascript event loop?
+					</h3>
+					<p class="text-secondary mt-2">
+						<span class="fw-bold">Ans:</span>
+						Event loop Asynchronous পদ্ধতিতে চলে। Javascript এর execution stack
+						এর সমস্ত code কে run করায়। সেখানে web APIs এর অংশ যেমন:
+						setTimeout(), setInterval() ইত্যাদি। এগুলোর একটা Parameter হিসাবে
+						Timer থাকে। সেই Timer background এ continue করে message queue নামক
+						স্থানে থাকে। যখন Timer এর সময় শেষ হয় তখন সেটা execution stack এ গিয়ে
+						run করে এবং সেটার output দেখায়। এরকম যতগুলো Asynchronous code পায়
+						সবগুলোকে message queue এ সিরিয়ালি রাখে এবং Time count যার আগে শেষ হয়
+						তাকে execute করে।
+					</p>
+				</div>
 			</div>
 		</section>
 		<footer></footer>
